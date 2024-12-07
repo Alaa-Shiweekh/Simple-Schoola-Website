@@ -53,8 +53,6 @@
   <h2>Contributing</h2>
   <p>If you'd like to contribute to the project, feel free to fork the repository and submit a pull request.</p>
 
-  <h2>License</h2>
-  <p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
 
   <h2>Contact</h2>
   <p>If you have any questions, feel free to reach out via GitHub issues or email.</p>
