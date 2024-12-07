@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>studentData</title>
+    <link rel="stylesheet" href="studentData.css">
+    <script src="all.js"></script>
+</head>
+
+<body>
+    <div class="searc">
+        <label for="">Search :</label>
+        <input type="text" id="search" placeholder="Search for names..">
+        <br>
+        <label for="">Filter by Department :</label>
+        <select id="departmentFilter">
+            <option value="All">All</option>
+            <option value="CS">CS</option>
+            <option value="OS">OS</option>
+            <option value="IS">IS</option>
+            <option value="IT">IT</option>
+            <option value="SW">SW</option>
+            <option value="SS">SS</option>
+        </select>
+        <br>
+        <label for="sort">Sort By:</label>
+        <select id="sort">
+            <option value="name">Name</option>
+            <option value="age">Age</option>
+            <option value="department">Department</option>
+            <option value="grade">Grade</option>
+        </select>
+        <br>
+    </div>
+    <h1>Student Data</h1>
+    <div class="t">
+        <table id="studentTable">
+
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Department</th>
+                    <th>Grade</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

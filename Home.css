@@ -1,0 +1,79 @@
+body {
+    background-color: #eae3dc;
+    background-image: url(images/bg1.webp);
+    background-repeat: no-repeat;
+    background-size: 800px;
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+    padding-top: 30px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #343260;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+a:hover {
+    color: white;
+    transform: translate(3px, -1px);
+}
+
+div {
+    padding-left: 1000px;
+    padding-right: 70px;
+    padding-top: 120px;
+    text-align: center;
+
+}
+
+h1 {
+    font-size: 50px;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    color: #343260;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+h1:hover {
+    color: white;
+    transform: translate(1px, 1px);
+}
+
+button {
+    width: 180px;
+    height: 70px;
+    border-radius: 40px;
+    border-color: #D97B84;
+    color: #343260;
+    font-size: 30px;
+    background-color: #ead6d8;
+    text-align: center;
+}
+
+button:hover {
+    color: white;
+    transform: translate(2px);
+    font-size: 32px;
+    background-color: #343260;
+    border-color: #343260;
+}
+
+pre {
+    padding-top: 20px;
+    font-size: 20px;
+    color: #343260;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+pre:hover {
+    transform: translate(2px);
+}

@@ -1,0 +1,131 @@
+body {
+    background-image: url(images/bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 1px;
+}
+
+.t,
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-left: 300px;
+}
+
+h1 {
+    margin-top: -320px;
+    text-align: center;
+    font-size: 70px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1:hover {
+    transform: translate(1px, 1px);
+}
+
+th {
+    background-color: #EA3891;
+    color: white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+tbody {
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+th,
+td {
+    padding-right: 60px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+    border-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    box-shadow: 3px 3px 13px #cf0066;
+}
+
+button:hover {
+    background-color: #cf0066;
+    border-color: #cf0066;
+    color: white;
+    box-shadow: 5px 5px 10px white;
+}
+
+tr:hover {
+    background-color: antiquewhite;
+    transform: translate(1px);
+}
+
+.searc {
+    width: fit-content;
+    margin-top: 170px;
+    margin-left: 30px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#search {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    width: 190px;
+    height: 40px;
+    text-align: center;
+    border-color: white;
+    font-size: 20px;
+}
+
+#departmentFilter {
+    margin-bottom: 25px;
+    border-radius: 20px;
+    width: 55px;
+    height: 40px;
+    text-align: center;
+    border-color: white;
+    font-size: 20px;
+}
+
+#sort {
+    margin-bottom: 25px;
+    border-radius: 20px;
+    width: 190px;
+    height: 40px;
+    text-align: center;
+    border-color: white;
+    font-size: 20px;
+}
+
+#search:hover {
+    transform: translate(1px);
+}
+
+#departmentFilter:hover {
+    transform: translate(1px);
+}
+
+#sort:hover {
+    transform: translate(1px);
+}

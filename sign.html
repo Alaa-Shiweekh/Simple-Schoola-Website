@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    <link rel="stylesheet" href="sign.css">
+    <script src="all.js"></script>
+</head>
+
+<body>
+    <div>
+        <form id="studentForm">
+            <h1>Add Student</h1>
+            <input type="text" placeholder="Enter student name" id="name" required>
+            <br>
+            <input type="number" placeholder="Enter student age" id="age" required>
+            <br>
+            <label class="gend">Enter Student gender :</label>
+            <br>
+            <input type="radio" name="gender" value="Male" id="genderMale"> Male
+            <input type="radio" name="gender" value="Female" id="genderFemale"> Female
+            <br>
+            <label class="s1">Student Department:</label>
+            <select id="dep">
+                <option value="CS">CS</option>
+                <option value="OS">OS</option>
+                <option value="IS">IS</option>
+                <option value="IT">IT</option>
+                <option value="SW">SW</option>
+                <option value="SS">SS</option>
+            </select>
+            <br>
+            <input type="number" placeholder="Student grade" id="grade">
+            <br>
+            <button type="submit" class="b1">ADD STUDENT</button>
+        </form>
+        <a href="studentData.html" target="_blank" class="b2"><button>View Students</button></a>
+    </div>
+</body>
+
+</html>
