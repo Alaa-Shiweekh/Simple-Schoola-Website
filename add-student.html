@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Student — Schoola Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/add-student.css" />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">S</span>
+        <span class="logo-text">Schoola</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="add-student.html" class="nav-link active">Add Student</a></li>
+        <li><a href="students.html" class="nav-link nav-cta">View Students</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <div class="page-grid">
+
+      <!-- Left Panel: Form -->
+      <section class="form-panel">
+        <div class="panel-header">
+          <p class="section-eyebrow">Student Portal</p>
+          <h1 class="panel-title">Add New Student</h1>
+          <p class="panel-subtitle">Fill in the details below to register a student in the academy system.</p>
+        </div>
+
+        <form class="student-form" id="studentForm" novalidate>
+
+          <!-- Name -->
+          <div class="field-group">
+            <label class="field-label" for="name">Full Name</label>
+            <div class="field-wrapper">
+              <svg class="field-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <input class="field-input" type="text" id="name" name="name" placeholder="Enter student full name" required autocomplete="off" />
+            </div>
+            <span class="field-error" id="name-error"></span>
+          </div>
+
+          <!-- Age -->
+          <div class="field-group">
+            <label class="field-label" for="age">Age</label>
+            <div class="field-wrapper">
+              <svg class="field-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <input class="field-input" type="number" id="age" name="age" placeholder="Age (e.g. 20)" min="5" max="100" required />
+            </div>
+            <span class="field-error" id="age-error"></span>
+          </div>
+
+          <!-- Gender -->
+          <div class="field-group">
+            <label class="field-label">Gender</label>
+            <div class="radio-group">
+              <label class="radio-card" for="genderMale">
+                <input type="radio" name="gender" value="Male" id="genderMale" />
+                <span class="radio-label">Male</span>
+              </label>
+              <label class="radio-card" for="genderFemale">
+                <input type="radio" name="gender" value="Female" id="genderFemale" />
+                <span class="radio-label">Female</span>
+              </label>
+            </div>
+            <span class="field-error" id="gender-error"></span>
+          </div>
+
+          <!-- Department -->
+          <div class="field-group">
+            <label class="field-label" for="dep">Department</label>
+            <div class="field-wrapper select-wrapper">
+              <svg class="field-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              <select class="field-input field-select" id="dep" name="dep" required>
+                <option value="">Select a department</option>
+                <option value="CS">CS — Computer Science</option>
+                <option value="OS">OS — Operating Systems</option>
+                <option value="IS">IS — Information Systems</option>
+                <option value="IT">IT — Information Technology</option>
+                <option value="SW">SW — Software Engineering</option>
+                <option value="SS">SS — System Security</option>
+              </select>
+              <svg class="select-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+            <span class="field-error" id="dep-error"></span>
+          </div>
+
+          <!-- Grade -->
+          <div class="field-group">
+            <label class="field-label" for="grade">Grade <span class="label-optional">(optional)</span></label>
+            <div class="field-wrapper">
+              <svg class="field-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              <input class="field-input" type="number" id="grade" name="grade" placeholder="Grade score (e.g. 85)" min="0" max="100" />
+            </div>
+          </div>
+
+          <!-- Submit -->
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>
+              <span>Register Student</span>
+            </button>
+            <button type="button" class="btn btn-ghost" id="resetBtn">Clear Form</button>
+          </div>
+
+        </form>
+
+        <!-- Success Toast -->
+        <div class="toast" id="toast" role="alert" aria-live="polite">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          <span id="toast-msg">Student registered successfully.</span>
+        </div>
+      </section>
+
+      <!-- Right Panel: Preview -->
+      <aside class="preview-panel">
+        <div class="preview-header">
+          <p class="section-eyebrow">Live Preview</p>
+          <h2 class="preview-title">Student Card</h2>
+        </div>
+
+        <div class="student-preview-card" id="previewCard">
+          <div class="preview-avatar" id="previewAvatar">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <div class="preview-info">
+            <span class="preview-name" id="previewName">Student Name</span>
+            <span class="preview-meta" id="previewMeta">Age — | Dept — | Grade —</span>
+          </div>
+          <span class="preview-badge" id="previewGender">Gender</span>
+        </div>
+
+        <!-- Quick Stats from localStorage -->
+        <div class="quick-stats">
+          <div class="qs-item">
+            <span class="qs-label">Total Students</span>
+            <span class="qs-value" id="totalCount">0</span>
+          </div>
+          <div class="qs-item">
+            <span class="qs-label">Added Today</span>
+            <span class="qs-value" id="todayCount">0</span>
+          </div>
+        </div>
+
+        <a href="students.html" class="view-all-link">
+          <span>View all students</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </aside>
+    </div>
+  </main>
+
+  <script src="scripts/app.js"></script>
+  <script src="scripts/add-student.js"></script>
+</body>
+
+</html>
