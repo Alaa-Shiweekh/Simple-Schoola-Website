@@ -25,6 +25,3 @@
 
 ---
 
-
-
-**Developed with ❤️ by Your Name**
